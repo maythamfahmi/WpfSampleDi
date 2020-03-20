@@ -6,8 +6,6 @@
         xmlns:local="clr-namespace:WpfSampleDi"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <TextBox x:Name="TextBox1" HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Width="780" Height="414"/>
+        <local:UserControlExample2 />
 
-    </Grid>
 </Window>

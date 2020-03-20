@@ -8,22 +8,17 @@ namespace WpfSampleDi
     /// </summary>
     public partial class MainWindow : Window
     {
-        private readonly ILogBase _logBase;
+        public readonly ILogBase LogBase;
+
+        public static MainWindow AppWindow;
 
         public MainWindow(ILogBase logBase)
         {
+            AppWindow = this;
+            LogBase = logBase;
+
             InitializeComponent();
-
-            _logBase = logBase;
-
-            TestMethod();
         }
-
-        private void TestMethod()
-        {
-            TextBox1.Text = _logBase.Info("App starting");
-        }
-
 
     }
 }
