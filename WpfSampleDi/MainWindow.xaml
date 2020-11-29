@@ -6,6 +6,9 @@
         xmlns:local="clr-namespace:WpfSampleDi"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <local:UserControlExample Height="396" />
         <local:UserControlExample2 />
+    </StackPanel>
 
 </Window>

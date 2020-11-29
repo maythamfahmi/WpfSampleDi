@@ -29,7 +29,7 @@ namespace WpfSampleDi
         private void AppOnStartup(object sender, StartupEventArgs e)
         {
             var mainWindow = _serviceProvider.GetService<MainWindow>();
-            mainWindow.Show();
+            mainWindow?.Show();
         }
     }
 }

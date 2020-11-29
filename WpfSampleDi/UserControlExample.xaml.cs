@@ -2,6 +2,7 @@
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Navigation;
+using WpfSampleDi.Service;
 
 namespace WpfSampleDi
 {
@@ -10,20 +11,29 @@ namespace WpfSampleDi
     /// </summary>
     public partial class UserControlExample : UserControl
     {
+        private readonly ILogBase _logBase;
+
         public UserControlExample()
         {
             InitializeComponent();
+
+            if (MainWindow.AppWindow?.LogBase != null)
+                _logBase = MainWindow.AppWindow.LogBase;
         }
 
         private void SetButton_Click(object sender, RoutedEventArgs e)
         {
+            _logBase.Info($"User url visit request");
+
             try
             {
-                this.WebFrame.Source = new Uri(this.UserSource.Text, UriKind.Absolute);
+                var uri = new Uri(this.UserSource.Text, UriKind.Absolute);
+                _logBase.Debug($"User try visiting {uri}");
+                this.WebFrame.Source = uri;
             }
             catch (Exception error)
             {
-                MessageBox.Show(error.Message);
+                _logBase.Error(error, error.Message);
             }
         }
 

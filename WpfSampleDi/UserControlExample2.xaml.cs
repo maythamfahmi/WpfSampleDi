@@ -1,6 +1,4 @@
-﻿using System.Net.Mime;
-using System.Windows;
-using System.Windows.Controls;
+﻿using System.Windows.Controls;
 using WpfSampleDi.Service;
 
 namespace WpfSampleDi
