@@ -18,7 +18,9 @@ namespace WpfSampleDi
             InitializeComponent();
 
             if (MainWindow.AppWindow?.LogBase != null)
+            {
                 _logBase = MainWindow.AppWindow.LogBase;
+            }
         }
 
         private void SetButton_Click(object sender, RoutedEventArgs e)
