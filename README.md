@@ -7,4 +7,6 @@
  - dotnet 5 (https://github.com/maythamfahmi/WpfSampleDi/tree/net5)
  - dotnet 5 (https://github.com/maythamfahmi/WpfSampleDi/tree/core31)
 
+This repo is based on article from ITackyard.com blog (https://itbackyard.com/how-to-net-core-3-0-wpf-application-use-dependency-injection/)
+
 <a href="https://itbackyard.com/how-to-net-core-3-0-wpf-application-use-dependency-injection/" target="_blank">Read more</a>
