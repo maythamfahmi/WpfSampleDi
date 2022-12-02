@@ -3,9 +3,10 @@
  Simple Wpf application using Dependency Injection (Microsoft.Extensions.DependencyInjection)
  
  Versions:
+ - dotnet 7 (https://github.com/maythamfahmi/WpfSampleDi/tree/net7)
  - dotnet 6 (https://github.com/maythamfahmi/WpfSampleDi/tree/net6)
  - dotnet 5 (https://github.com/maythamfahmi/WpfSampleDi/tree/net5)
- - dotnet 5 (https://github.com/maythamfahmi/WpfSampleDi/tree/core31)
+ - dotnet 3.1 (https://github.com/maythamfahmi/WpfSampleDi/tree/core31)
 
 This repo is based on article from ITackyard.com blog (https://itbackyard.com/how-to-net-core-3-0-wpf-application-use-dependency-injection/)
 
